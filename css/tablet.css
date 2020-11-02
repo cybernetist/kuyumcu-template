@@ -1,0 +1,59 @@
+@media only screen and (min-width: 1224px) {
+  .carousel {
+    overflow: hidden;
+  }
+  .carousel-control-prev {
+    left: -83px !important;
+  }
+  .carousel-control-next {
+    right: -83px !important;
+  }
+  .carousel-caption {
+    top: 95px;
+    bottom: initial !important;
+    max-width: 500px;
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    right: 37px !important;
+    left: initial !important;
+  }
+  .carousel-caption h5 {
+    color: #feb564;
+    font-family: "Playfair Display";
+    font-size: 65px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .carousel-caption p {
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+  }
+  .carousel-caption .slider-button {
+    width: 222px;
+    height: 44px;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 7px;
+  }
+}
+/*# sourceMappingURL=tablet.css.map */

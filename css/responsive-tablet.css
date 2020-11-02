@@ -1,0 +1,60 @@
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .carousel-control-prev {
+    left: -83px !important;
+  }
+  .carousel-control-next {
+    right: -83px !important;
+  }
+  .carousel-caption {
+    top: 20px;
+    bottom: initial !important;
+    max-width: 340px;
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    right: 37px !important;
+    left: initial !important;
+  }
+  .carousel-caption h5 {
+    color: #feb564;
+    font-family: "Playfair Display";
+    font-size: 44px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .carousel-caption p {
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+  }
+  .carousel-caption .slider-button {
+    width: 222px;
+    height: 44px;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 7px;
+  }
+}
+/*# sourceMappingURL=responsive-tablet.css.map */

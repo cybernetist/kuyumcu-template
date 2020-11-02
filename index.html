@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="title" content="Reis Kuyumculuk">
+  <meta name="description" content="Kuyumculuk Demo">
+  <meta name="keywords" content="kuyumcu,reis">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+  <meta name="language" content="Turkish">
+  <meta name="revisit-after" content="1 days">
+  <meta name="author" content="Aydn Meydanioglu">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="dist/assets/owl.carousel.css">
+  <link rel="stylesheet" href="dist/assets/owl.theme.default.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+
+
+  <script src="https://kit.fontawesome.com/a825952d0a.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="./img/icon.png" />
+  <title>Reis Kuyumculuk</title>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="left">
+      <p>300 TL Üzeri Siparişlerde Ücretsiz Kargo</p>
+    </div>
+    <div class="right">
+      <ul class="icon">
+        <li>
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+          </svg>
+        </li>
+        <li>
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+          </svg>
+        </li>
+        <li>
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-gem" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785l-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004l.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495l5.062-.005L8 13.366 5.47 5.495zm-1.371-.999l-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l2.92-.003 2.193 6.82L1.5 5.5zm7.889 6.817l2.194-6.828 2.929-.003-5.123 6.831z" />
+          </svg>
+          <span id="total">0</span>
+
+        </li>
+      </ul>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Türkçe
+        </button>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand d-lg-none" href="#"><img class="img-fluid" src="../img/logo.png" /></a>
+
+      <!-- Use flexbox utility classes to change how the child elements are
+                justified -->
+      <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+        <ul class="navbar-nav">
+          <a href="#"><img class="img-fluid" src="../img/menu.png" /></a>
+        </ul>
+        <!-- Show this only lg screens and up -->
+        <a class="navbar-brand d-none d-lg-block" href="#"><img class="img-fluid" src="../img/logo.png" /></a>
+
+        <ul class="navbar-nav">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+            <path fill-rule="evenodd"
+              d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+          </svg><input class="search-bar" placeholder="Site içi ürün arama">
+        </ul>
+      </div>
+    </div>
+    <!-- Show this only on mobile to medium screens -->
+  </nav>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="img/slide1.png" alt="First slide" />
+        <div class="carousel-caption">
+          <h5>MODERN KOLEKSİYON</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            vestibulum, lacus at auctor volutpat, dui purus pulvinar massa,
+            vel venenatis lectus sem et ugue.
+          </p>
+          <button class="slider-button" href="#">
+            KOLEKSİYONU GÖRÜNTÜLE
+          </button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/slide1.png" alt="First slide" />
+        <div class="carousel-caption">
+          <h5>MODERN KOLEKSİYON</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            vestibulum, lacus at auctor volutpat, dui purus pulvinar massa,
+            vel venenatis lectus sem et ugue.
+          </p>
+          <button class="slider-button" href="#">
+            KOLEKSİYONU GÖRÜNTÜLE
+          </button>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <div class="about">
+    <div class="row">
+      <h3>
+        İnce Ruhunuzu <br />
+        <span style="color: #feb564 ;">Yansıtan Parıldayan</span> <br />
+        Takılar.
+      </h3>
+      <hr style="height: 4px" align="left" width="65%" />
+    </div>
+
+    <div class="row">
+      <div class="col-md-3 p-0">
+        <hr style="margin-top: 30px" align="left" width="65%" />
+        <h4>
+          Kendinizi<br />
+          Yansıtın
+        </h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+          vestibulum, lacus at auctor volutpat, dui purus pulvinar massa, vel
+          venenatis lectus sem et augue.
+          <br /><br />
+          Donec nec odio eget turpis pharetra lobortis vitae vitae ante. Donec
+          vehicula condimentum nisi sed lobortis. Donec ut est eleifend,
+          tempus leo ut, lobortis diam.
+        </p>
+        <button class="alt-button">Alışverişe Başla</button>
+      </div>
+      <div class="col-md-9">
+        <img class="img-fluid" id="ortaresim" src="./img/orta-1.png" />
+        <div class="urun-orta">
+          <div class="content">
+            <div class="urun-icerik">
+              <div class="row mb-5">
+                <div class="col-md-8 content-icerik">
+                  <h5>Tek Taş Pırlanta</h5>
+                  <p>
+                    Quisque sagittis diam sit amet elit placerat, sit amet
+                    iaculis purus egestas. Quisque dapibus tur...
+                  </p>
+                  <span>2,850 TL</span>
+                </div>
+                <div class="col-md-4 content-image">
+                  <img class="img-fluid" src="img/urunorta_1.png" />
+                </div>
+              </div>
+              <div class="row mb-5">
+                <div class="col-md-8 content-icerik">
+                  <h5>Yaprak Desenli Taşlı Küpe</h5>
+                  <p>
+                    Quisque sagittis diam sit amet elit placerat, sit amet
+                    iaculis purus egestas. Quisque dapibus tur...
+                  </p>
+                  <span>2,850 TL</span>
+                </div>
+                <div class="col-md-4 content-image">
+                  <img class="img-fluid" src="img/urunorta_2.png" />
+                </div>
+              </div>
+              <div class="row mb-5">
+                <div class="col-md-8 content-icerik">
+                  <h5>Taşlı Alyans</h5>
+                  <p>
+                    Quisque sagittis diam sit amet elit placerat, sit amet
+                    iaculis purus egestas. Quisque dapibus tur...
+                  </p>
+                  <span>2,850 TL</span>
+                </div>
+                <div class="col-md-4 content-image">
+                  <img class="img-fluid" src="img/urunorta_3.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="heading">
+      <h1>TÜM ÜRÜNLER</h1>
+      <img class="img-fluid" src="img/hr.png" />
+    </div>
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="one-cikanlar-tab" data-toggle="pill" href="#one-cikanlar" role="tab"
+          aria-controls="one-cikanlar" aria-selected="true">ÖNE ÇIKANLAR</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="yeni-urunler-tab" data-toggle="pill" href="#yeni-urunler" role="tab"
+          aria-controls="yeni-urunler" aria-selected="false">YENİ ÜRÜNLER</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="on-satis-tab" data-toggle="pill" href="#on-satis" role="tab" aria-controls="on-satis"
+          aria-selected="false">ÖN SATIŞTA OLANLAR</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="indirimdekiler-tab" data-toggle="pill" href="#indirimdekiler" role="tab"
+          aria-controls="indirimdekiler" aria-selected="false">İNDİRİMDEKİLER</a>
+      </li>
+    </ul>
+    <div class="tab-content pt-2 pl-1" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="one-cikanlar" role="tabpanel" aria-labelledby="one-cikanlar-tab">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="card">
+              <span id="free-shipping">ÜCRETSİZ KARGO</span>
+              <img class="card-img-top" src="img/product-1.png" />
+              <div class="card-body">
+                <h5 class="card-title">Nam eget purus orci</h5>
+
+                <p class="card-text"><span>3,850 TL </span>2,850 TL</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <span id="free-shipping">ÜCRETSİZ KARGO</span>
+              <img class="card-img-top" src="img/product-2.png" />
+              <div class="card-body">
+                <h5 class="card-title">Nam eget purus orci</h5>
+
+                <p class="card-text"><span>3,850 TL </span>2,850 TL</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="card-img-top" src="img/product-3.png" />
+              <div class="card-body">
+                <h5 class="card-title">Nam eget purus orci</h5>
+
+                <p class="card-text"><span>3,850 TL </span>2,850 TL</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="card-img-top" src="img/product-4.png" />
+              <div class="card-body">
+                <h5 class="card-title">Nam eget purus orci</h5>
+
+                <p class="card-text"><span>3,850 TL </span>2,850 TL</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <span id="free-shipping">ÜCRETSİZ KARGO</span>
+              <img class="card-img-top" src="img/product-5.png" />
+              <div class="card-body">
+                <h5 class="card-title">Nam eget purus orci</h5>
+
+                <p class="card-text"><span>3,850 TL </span>2,850 TL</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="tab-pane fade" id="yeni-urunler" role="tabpanel" aria-labelledby="yeni-urunler-tab">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="card">
+              <img class="card-img-top" src="img/product-1.png" />
+              <div class="card-body">
+                <h5 class="card-title">Nam eget purus orci</h5>
+
+                <p class="card-text"><span>3,850 TL </span>2,850 TL</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="card-img-top" src="img/product-2.png" />
+              <div class="card-body">
+                <h5 class="card-title">Nam eget purus orci</h5>
+
+                <p class="card-text"><span>3,850 TL </span>2,850 TL</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="card-img-top" src="img/product-3.png" />
+              <div class="card-body">
+                <h5 class="card-title">Nam eget purus orci</h5>
+
+                <p class="card-text"><span>3,850 TL </span>2,850 TL</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="card-img-top" src="img/product-4.png" />
+              <div class="card-body">
+                <h5 class="card-title">Nam eget purus orci</h5>
+
+                <p class="card-text"><span>3,850 TL </span>2,850 TL</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="card-img-top" src="img/product-5.png" />
+              <div class="card-body">
+                <h5 class="card-title">Nam eget purus orci</h5>
+
+                <p class="card-text"><span>3,850 TL </span>2,850 TL</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="tab-pane fade" id="on-satis" role="tabpanel" aria-labelledby="on-satis-tab">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="card">
+              <img class="card-img-top" src="img/product-1.png" />
+              <div class="card-body">
+                <h5 class="card-title">Nam eget purus orci</h5>
+
+                <p class="card-text"><span>3,850 TL </span>2,850 TL</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="card-img-top" src="img/product-2.png" />
+              <div class="card-body">
+                <h5 class="card-title">Nam eget purus orci</h5>
+
+                <p class="card-text"><span>3,850 TL </span>2,850 TL</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="card-img-top" src="img/product-3.png" />
+              <div class="card-body">
+                <h5 class="card-title">Nam eget purus orci</h5>
+
+                <p class="card-text"><span>3,850 TL </span>2,850 TL</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="card-img-top" src="img/product-4.png" />
+              <div class="card-body">
+                <h5 class="card-title">Nam eget purus orci</h5>
+
+                <p class="card-text"><span>3,850 TL </span>2,850 TL</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="card-img-top" src="img/product-5.png" />
+              <div class="card-body">
+                <h5 class="card-title">Nam eget purus orci</h5>
+
+                <p class="card-text"><span>3,850 TL </span>2,850 TL</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="tab-pane fade" id="indirimdekiler" role="tabpanel" aria-labelledby="indirimdekiler-tab">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="card">
+              <img class="card-img-top" src="img/product-1.png" />
+              <div class="card-body">
+                <h5 class="card-title">Nam eget purus orci</h5>
+
+                <p class="card-text"><span>3,850 TL </span>2,850 TL</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="card-img-top" src="img/product-2.png" />
+              <div class="card-body">
+                <h5 class="card-title">Nam eget purus orci</h5>
+
+                <p class="card-text"><span>3,850 TL </span>2,850 TL</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="card-img-top" src="img/product-3.png" />
+              <div class="card-body">
+                <h5 class="card-title">Nam eget purus orci</h5>
+
+                <p class="card-text"><span>3,850 TL </span>2,850 TL</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="card-img-top" src="img/product-4.png" />
+              <div class="card-body">
+                <h5 class="card-title">Nam eget purus orci</h5>
+
+                <p class="card-text"><span>3,850 TL </span>2,850 TL</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="card-img-top" src="img/product-5.png" />
+              <div class="card-body">
+                <h5 class="card-title">Nam eget purus orci</h5>
+
+                <p class="card-text"><span>3,850 TL </span>2,850 TL</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 content">
+          <h2>
+            <span style="color: #feb564 ;">Gerçek Güzellik</span>
+            Seninle.<br />
+            Onları İfade Et.
+          </h2>
+          <p>
+            Praesent consequat sit amet lorem condimentum tincidunt. Sed
+            lobortis velit sed mauris vulputate, quis eleifend erat luctus.
+            Duis eget imperdiet massa. Praesent libero est, laoreet in lorem
+            eu, hendrerit tincidunt ante.
+          </p>
+          <p>
+            Curabitur enim urna, facilisis id ultrices a, lobortis vitae
+            magna. Vestibulum varius feugiat massa, sed scelerisque metus
+            gravida vitae. Proin eget feugiat nibh.
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="col-md-6 image">
+          <img class="img-fluid" src="img/gercek-guzellik.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="banner-true">
+    <div class="row">
+      <div class="col-md-6 col-xs-12">
+        <div class="banner1">
+          <img class="img-fluid" src="./img/blogustu_1.png" />
+        </div>
+      </div>
+      <div class="col-md-3 col-xs-6">
+        <div class="banner2">
+          <button class="banner-button" href="#">ŞİMDİ KEŞRET</button>
+        </div>
+      </div>
+      <div class="col-md-3 col-xs-6">
+        <div class="banner3">
+          <button class="banner-button" href="#">ŞİMDİ KEŞRET</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="instagram-feed">
+    <div class="heading">
+      <h1>INSTAGRAM FEED</h1>
+      <img class="img-fluid" src="img/hr.png" />
+    </div>
+    <div class="row p-0">
+      <div class="col col-xs-6 p-0">
+        <img class="img-fluid" src="./img/insta1.png" />
+      </div>
+      <div class="col col-xs-6 p-0">
+        <img class="img-fluid" src="./img/insta2.png" />
+      </div>
+      <div class="col col-xs-6 p-0">
+        <img class="img-fluid" src="./img/insta3.png" />
+      </div>
+      <div class="col col-xs-6 p-0">
+        <img class="img-fluid" src="./img/insta4.png" />
+      </div>
+      <div class="col col-xs-6 p-0">
+        <img class="img-fluid" src="./img/insta5.png" />
+      </div>
+    </div>
+    <div class="row p-0">
+      <div class="col col-xs-6 p-0">
+        <img class="img-fluid" src="./img/insta6.png" />
+      </div>
+      <div class="col col-xs-6 p-0">
+        <img class="img-fluid" src="./img/insta7.png" />
+      </div>
+      <div class="col col-xs-6 p-0">
+        <img class="img-fluid" src="./img/insta8.png" />
+      </div>
+      <div class="col col-xs-6 p-0">
+        <img class="img-fluid" src="./img/insta9.png" />
+      </div>
+      <div class="col col-xs-6 p-0">
+        <img class="img-fluid" src="./img/insta10.png" />
+      </div>
+    </div>
+  </div>
+
+  <div class="blog">
+    <div class="heading">
+      <h1>BLOG</h1>
+      <img class="img-fluid" src="img/hr.png" />
+    </div>
+    <div class="container">
+      <!-- Swiper -->
+      <div class="swiper-container two">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slider-image">
+              <img src="/img/blog1.png" alt="slide 1">
+              <h5>Lorem ipsum dolor sit amet</h5>
+              <p>Praesent consequat sit amet lorem condimentum tincidunt. Sed lobortis velit sed mauris vulputate, quis
+                eleifend erat luctus. Duis eget imperdiet massa. Praesent libero est, laoreet in lorem eu, hendrerit
+                tincidunt ante.</p>
+              <p>Curabitur enim urna, facilisis id ultrices a, lobortis vitae magna. Vesztibulum varius feugiat massa,
+                sed scelerisque metus gravida vitae. Proin eget feugiat nibh.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-image">
+              <img src="/img/blog3.png" alt="slide 1">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-image">
+              <img src="/img/blog2.png" alt="slide 1">
+            </div>
+          </div>
+
+
+          <!-- Add Pagination -->
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="content">
+            <h3>Bültenimize abone olun</h3>
+            <p>
+              Yeni ürünler ve yaklaşan satışlar hakkında en son güncellemeleri
+              alın.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="subscribe">
+            <input placeholder="e-posta adresinizi yazınız" /><img id="email" class="img-fluid" src="img/email.png">
+          </div>
+        </div>
+        <div class="col-md-3 d-flex align-items-center">
+          <ul class="social-icon d-flex">
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <img class="img-fluid" id="footer-img" src="img/footer.png" />
+        </div>
+        <div class="col-md-5">
+          <ul class="footer-info">
+            <li>Herhangi bir sorunuz varsa bize ulaşın</li>
+            <li><span style="color: #feb564;">info@reiskuyumculuk.com</span></li>
+            <li>0850 255 18 15</li>
+            <li>Teşvikiye Caddesi Hak Pasajı No:22/44 Nişantaşı / İstanbul</li>
+            <li>Pazartesi - Cuma: 09:00 - 18:00</li>
+            <li>Cumartesi: 10:00 - 14:00</li>
+          </ul>
+          <p>Copyright © 2020 Reis Kuyumculuk</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="row">
+      <img class="img-fluid" style="margin-left: auto; margin-right: 50px;" src="img/logodijital.png">
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/all.js"></script>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="dist/owl.carousel.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+
+  <script>
+
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 15,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true
+        },
+        600: {
+          items: 3,
+
+        },
+        1000: {
+          items: 5,
+
+          loop: true
+        }
+      }
+    })
+  </script>
+  <script>
+
+    var swiper = new Swiper('.swiper-container.two', {
+
+      paginationClickable: true,
+      effect: 'coverflow',
+      loop: true,
+      centeredSlides: true,
+      slidesPerView: '2',
+      coverflow: {
+        rotate: 0,
+        stretch: 300,
+        depth: 50,
+        modifier: 0.7,
+        slideShadows: false,
+      }
+    });
+  </script>
+</body>
+
+</html>

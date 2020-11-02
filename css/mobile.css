@@ -1,0 +1,186 @@
+@media only screen and (max-width: 600px) {
+  .banner .content {
+    padding: 20px;
+  }
+  .banner .content h2 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .banner .content p {
+    font-size: 13px;
+  }
+  .instagram-feed {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .heading h1 {
+    line-height: normal !important;
+    font-size: 24px;
+  }
+  .topbar .left {
+    display: none;
+  }
+  .navbar-brand.d-lg-none {
+    position: relative;
+    margin: auto;
+  }
+  .carousel {
+    overflow: hidden;
+  }
+  .carousel-control-prev {
+    left: -83px !important;
+  }
+  .carousel-control-next {
+    right: -83px !important;
+  }
+  .carousel-caption {
+    top: -18px;
+    bottom: initial !important;
+    max-width: 100%;
+    padding: 0;
+    right: 0% !important;
+  }
+  .carousel-caption h5 {
+    color: #feb564;
+    font-family: "Playfair Display";
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .carousel-caption p {
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 9px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+  }
+  .carousel-caption .slider-button {
+    width: 212px;
+    height: 24px;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 11px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .about {
+    padding-top: 0px;
+    padding-left: 20px;
+  }
+  .about h3 {
+    font-size: 31px;
+  }
+  .about hr {
+    display: none;
+  }
+  .about p {
+    font-size: 11px;
+  }
+  .about .row {
+    padding: 20px;
+  }
+  .newsletter {
+    height: 224px;
+    overflow: hidden;
+  }
+  .newsletter .subscribe {
+    width: 340px;
+    height: 44px;
+    margin-bottom: 30px;
+  }
+  .banner-true {
+    margin: 0px;
+  }
+  .banner-true .banner1 {
+    min-height: 100%;
+  }
+  .banner-true .banner2 {
+    background-image: url("../img/blogustu_2.png");
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .banner-true .banner3 {
+    background-image: url("../img/blogustu_3.png");
+    min-height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .banner-true .banner-button {
+    width: 209px;
+    height: 64px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+  footer {
+    height: auto;
+    padding-bottom: 50px;
+    background-color: #1d1d1d;
+  }
+  footer #footer-img {
+    margin: -147px;
+  }
+  footer p {
+    text-align: left;
+    margin-top: 57px;
+    color: #fff;
+  }
+  footer .footer-info {
+    margin-top: 150px;
+  }
+  footer .footer-info li {
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 30px;
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */
